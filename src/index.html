@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>mdEditor</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="vendor/marked.min.js" defer></script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <div id="toolbar">
+    <button id="btn-open-folder" title="폴더 열기">&#128194; 폴더 열기</button>
+    <button id="btn-open-file" title="파일 열기">&#128196; 파일 열기</button>
+    <button id="btn-new-file" title="새 파일 만들기">&#65291; 새 파일</button>
+    <span class="spacer"></span>
+    <button id="btn-raw" title="문서 전체를 텍스트 형식으로 편집">전체</button>
+    <button id="btn-raw-cancel" title="원래 형식으로 되돌리기 (텍스트 편집 취소)">취소</button>
+    <button id="btn-split" title="편집 영역 2분할">&#9707;</button>
+    <button id="btn-font-dec" title="글꼴 작게">A&#8722;</button>
+    <span id="font-size-label">15px</span>
+    <button id="btn-font-inc" title="글꼴 크게">A+</button>
+    <button id="btn-theme" title="다크/라이트 모드 전환">&#127769;</button>
+  </div>
+
+  <div id="main">
+    <div id="sidebar">
+      <div id="tree"></div>
+      <div id="sidebar-hint">파일이나 폴더를<br>여기로 드래그하세요</div>
+    </div>
+    <div id="sidebar-resizer"></div>
+    <div id="editor-area"></div>
+  </div>
+
+  <div id="ctxmenu" hidden></div>
+  <div id="modal-root" hidden></div>
+  <div id="drop-overlay" hidden>
+    <div class="drop-overlay-msg">놓으면 탐색기 목록에 추가됩니다</div>
+  </div>
+  <div id="toast" hidden></div>
+</body>
+</html>

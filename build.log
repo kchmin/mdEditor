@@ -1,0 +1,24 @@
+﻿cargo :     Updating crates.io index
+At line:1 char:43
++ ... ation D:\ZZZZZ\mdEditor\src-tauri; cargo build --release 2>&1 | Out-F ...
++                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (    Updating crates.io index:String) [], Remo 
+   teException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+     Locking 1 package to latest compatible version
+      Adding http-range v0.1.5
+ Downloading crates ...
+  Downloaded http-range v0.1.5
+   Compiling webview2-com-sys v0.38.2
+   Compiling http-range v0.1.5
+   Compiling tao v0.35.3
+   Compiling tauri v2.11.2
+   Compiling tauri-plugin-fs v2.5.1
+   Compiling tauri-plugin-dialog v2.7.1
+   Compiling md-editor v1.0.0 (D:\ZZZZZ\mdEditor\src-tauri)
+   Compiling webview2-com v0.38.2
+   Compiling tauri-runtime v2.11.2
+   Compiling wry v0.55.1
+   Compiling tauri-runtime-wry v2.11.2
+    Finished `release` profile [optimized] target(s) in 1m 22s
